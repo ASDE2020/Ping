@@ -1,0 +1,122 @@
+/* 秒杀模块 */
+.nav {
+    overflow: hidden;
+}
+.sc {
+    position: absolute;
+    left: 186px;
+    top: 40px;
+    border-left: 1px solid #b1191a;
+    padding: 3px 0 3px 15px;
+}
+.sk_list {
+    float: left;
+}
+.sk_list ul li {
+    float: left;
+    line-height: 47px;
+}
+.sk_list ul li a {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+    padding: 0 30px;
+}
+.sk_con {
+    float: left;
+}
+.sk_con ul li {
+    float: left;
+    line-height: 49px;
+}
+.sk_con ul li a {
+    font-size: 14px;
+    padding: 0 20px;
+}
+.sk_con ul li:last-child a::after {
+    content: '\e900';
+    font-family: 'icomoon';
+}
+.sk_bd {
+    margin-top: 25px;
+}
+.sk_bd ul li {
+    float: left;
+    width: 288px;
+    height: 458px;
+    margin-right: 15px;
+    margin-top: 10px;
+    border: 1px solid transparent;
+    overflow: hidden;
+}
+.sk_bd ul li:nth-child(4n) {
+    margin-right: 0;
+}
+/* 前四个不要top值 */
+.sk_bd ul li:nth-child(-n+4) {
+    margin-top: 0;
+}
+.sk_bd ul li:hover {
+    border: 1px solid #e12228;
+}
+.sk_bd ul li a {
+    display: block;
+    width: 288px;
+    text-align: center;
+}
+.sk_bd ul li h4 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+    margin: 0 10px;
+}
+.sk_bd ul li .many {
+    margin: 15px 10px 0;
+}
+.many span:first-child {
+    font-size: 22px;
+    color: #e60012;
+    font-weight: 700;
+}
+.many span:last-child {
+    font-size: 14px;
+    color: #a4a4a4;
+    text-decoration: line-through;
+}
+.sold {
+    /* float: left; */
+    height: 15px;
+    line-height: 15px;
+    margin: 0 10px;
+}
+.bar {
+    float: left;
+    width: 130px;
+    height: 12px;
+    border: 1px solid #e60012;
+    border-radius: 6px;
+    margin: 0 10px;
+}
+.bar_in {
+    width: 80%;
+    height: 100%;
+    background-color: #e60012;
+    border-radius: 6px;
+}
+.sold::before {
+    content: '已售87%';
+    float: left;
+}
+.snapup {
+    display: block;
+    width: 288px;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 15px;
+    background-color: #b1191a;
+    font-size: 20px;
+    color: #fff;
+}
+.snapup:hover {
+    color: #fff;
+}
